@@ -15,7 +15,11 @@ COPY . $APP_HOME
 # Install gems
 RUN bundle install
 
-# Start server
+# set sinatra port variable
 ENV PORT 3000
+
+# container's port to be exposed
 EXPOSE 3000
+
+# Start server
 CMD ["ruby", "./hello_world.rb"]
