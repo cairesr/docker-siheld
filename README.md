@@ -2,7 +2,7 @@
 
 A hello world with Sinatra ready to Docker. It can be run locally or as a docker container.
 
-This is the source code to build the Docker Image and run as a container. However, if you want, the source code can be fetched from here and run locally with no docker involved:
+> This is the source code to build the Docker Image and run as a container. However, if you want, the source code can be fetched from here and run locally with no docker involved:
 
 ```shell
 cd docker-siheld
