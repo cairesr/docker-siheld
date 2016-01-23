@@ -1,11 +1,11 @@
 # Docker Image with a Sinatra Example
 
-A hello world with Sinatra ready to Docker. It can be run locally or as a docker container:
+A hello world with Sinatra ready to Docker. It can be run locally or as a docker container.
 
-> To learn about docker, see: https://docs.docker.com/
+This is the source code to build the Docker Image and run as a container. However, if you want, the source code can be fetched from here and run locally with no docker involved:
 
-## Simply run it (no docker)
 ```shell
+cd docker-siheld
 bundle install
 ruby hello_world.rb
 ```
@@ -14,19 +14,18 @@ ruby hello_world.rb
 
 > if you're not familiar with docker, please take your time with the very basics: https://docs.docker.com/engine/misc/ 
 
-This package is docker enabled, you can run it from a container through the following two options:
-
-### Option 1: build the image locally
+### Option 1: pull from github and build the image in your docker host
 ```shell
+cd docker-siheld
 docker build --rm -t sinatra-hello-world .
 docker run --rm -p8080:8080 sinatra-hello-world
 ```
 
-### Option 2: pull the image from the Docker Hub. 
+### Option 2: pull the image straight from the Docker Hub (https://hub.docker.com/r/cairesr/sinatra-hello-world) and run the image in your docker host
 
 > Obs. with this option, you don't need to pull the source code from this github repo, just run the following commands:
 
-```bash
+```shell
 docker pull cairesr/sinatra-hello-world
 docker run --rm -p8080:8080 sinatra-hello-world
 ```
