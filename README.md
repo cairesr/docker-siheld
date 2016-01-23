@@ -21,7 +21,7 @@ docker build --rm -t sinatra-hello-world .
 docker run --rm -p8080:8080 sinatra-hello-world
 ```
 
-### Option 2: pull the image straight from the Docker Hub (https://hub.docker.com/r/cairesr/sinatra-hello-world) and run the image in your docker host
+### Option 2: pull the image straight from the Docker Hub and run the image in your docker host
 
 > Obs. with this option, you don't need to pull the source code from this github repo, just run the following commands:
 
